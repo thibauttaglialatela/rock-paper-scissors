@@ -10,13 +10,13 @@ const generateComputerChoice = () => {
     const randomNumber = Math.floor(Math.random() *3) + 1;
     switch (randomNumber) {
         case 1:
-            computerChoice = 'Rock';
+            computerChoice = 'rock';
             break;
         case 2:
-            computerChoice = 'Paper';
+            computerChoice = 'paper';
             break;
         case 3:
-            computerChoice = 'Scissors';
+            computerChoice = 'scissors';
             break;
     }
     computerChoiceDisplay.innerHTML = computerChoice;
@@ -26,26 +26,26 @@ const getResult = () => {
     if (computerChoice === userChoice) {
         result = "it's a draw";
     }
-    if (computerChoice === 'Rock' && userChoice === 'paper') {
+    if (computerChoice === 'rock' && userChoice === 'paper') {
         result = 'You win';
     }
-    if (computerChoice === 'Rock' && userChoice === 'scissors') {
+    if (computerChoice === 'rock' && userChoice === 'scissors') {
         result = 'You lose';
     }
-    if (computerChoice === 'Paper' && userChoice === 'scissors') {
+    if (computerChoice === 'paper' && userChoice === 'scissors') {
         result = 'You win';
     }
-    if (computerChoice === 'Paper' && userChoice === 'Rock') {
+    if (computerChoice === 'paper' && userChoice === 'rock') {
         result = 'You lose';
     }
-    if (computerChoice === 'Scissors' && userChoice === 'Rock') {
+    if (computerChoice === 'scissors' && userChoice === 'rock') {
         result = 'You win';
     }
-    if (computerChoice === 'Scissors' && userChoice === 'Paper') {
+    if (computerChoice === 'scissors' && userChoice === 'paper') {
         result = 'You lose';
     }
 
-    return result;
+    return resultDisplay.innerHTML = result;
 }
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (event) => {

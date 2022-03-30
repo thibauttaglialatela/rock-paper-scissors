@@ -1,0 +1,73 @@
+body {
+    background-color: darkgrey;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+align-items: center;
+}
+
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #00ffff;
+    padding: 10px;
+    width: 50vw;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    color: #201313;
+  text-shadow: 2px 2px 4px #00ffff;
+  text-transform: uppercase;
+}
+
+h2 {
+    color:#474747;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:left ;
+}
+
+h2 span {
+    color:#8E0B25;
+}
+
+button {
+    display: block;
+    width: 100%;
+padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #cddc39;
+}
+
+button:active {
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
